@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Email confirmed</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 24px; line-height: 1.4; }
+      .card { max-width: 520px; margin: 0 auto; border: 1px solid #3333; border-radius: 12px; padding: 16px; }
+      .muted { opacity: 0.7; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>✅ Email confirmed</h2>
+      <p>You can return to the app and sign in.</p>
+      <p class="muted" id="debug"></p>
+    </div>
+
+    <script type="module">
+      // Optional: if Supabase redirects back with tokens in the URL hash,
+      // you can just ignore them and show success. Keep this page dumb.
+      const debug = document.getElementById("debug");
+      const hasHash = !!window.location.hash;
+      const hasCode = new URLSearchParams(window.location.search).has("code");
+      debug.textContent = hasHash || hasCode ? "Confirmation link processed." : "";
+    </script>
+  </body>
+</html>
