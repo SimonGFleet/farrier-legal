@@ -20,22 +20,25 @@
 <main>
   <h1>Privacy Policy</h1>
   <p class="muted">
-    <strong>farrier app</strong> is provided by <strong>Simon Fleet</strong>.<br />
-    Last updated: <strong>2026-01-09</strong>
+    <strong>Farrier Fleet</strong> is provided by <strong>Simon Fleet</strong>.<br />
+    Last updated: <strong>2026-02-02</strong>
   </p>
 
   <div class="box">
-    <p><strong>Contact</strong></p>
+    <p><strong>Controller & Contact</strong></p>
+    <p class="muted" style="margin-top:-6px;">
+      For the purposes of the UK GDPR, Simon Fleet is the data controller for personal data processed through Farrier Fleet.
+    </p>
     <p>
       Email: <a href="mailto:simongabrielfleet@gmail.com">simongabrielfleet@gmail.com</a><br />
-      Location: United Kingdom
+      Postal address: 4 Edward Wilson Villas, Cheltenham, GL50 2LP, United Kingdom
     </p>
   </div>
 
   <h2>What this policy covers</h2>
   <p>
     This policy explains how we collect, use, store, and share personal data when you use the
-    <strong>farrier app</strong> mobile app (iOS/Android).
+    <strong>Farrier Fleet</strong> mobile app (iOS/Android).
   </p>
 
   <h2>Personal data we process</h2>
@@ -43,34 +46,51 @@
   <ul>
     <li><strong>Account data</strong>: email address and authentication identifiers (used to sign you in).</li>
     <li><strong>Client data you enter</strong>: client names, addresses, postcodes, notes and other details you choose to store.</li>
-    <li><strong>Location / geocoding data</strong>: location coordinates derived from client addresses or locations you store for route planning.</li>
+    <li><strong>Derived location data</strong>: coordinates derived from addresses you store (for mapping, geocoding, and distance estimates).</li>
     <li><strong>Photos</strong>: images you upload (e.g. horse photos) and any captions/notes you attach.</li>
-    <li><strong>Distance / routing data</strong>: calculated distances and travel-time estimates between client locations.</li>
-    <li><strong>Subscription status</strong>: information about whether you have an active subscription (if you purchase one).</li>
+    <li><strong>Distance / routing data</strong>: calculated distances and travel-time estimates between stored locations.</li>
+    <li><strong>Subscription status</strong>: whether you have an active subscription and related entitlement status.</li>
+    <li><strong>Support communications</strong>: messages you send us (e.g. emails) and our responses.</li>
   </ul>
 
   <h3>What we do not collect</h3>
   <ul>
-    <li><strong>No analytics / advertising tracking</strong>: we do not run third-party analytics or ad tracking SDKs in the app.</li>
+    <li><strong>No advertising tracking</strong>: we do not run advertising SDKs or track you across apps and websites.</li>
+    <li><strong>No third-party analytics SDKs</strong>: we do not include third-party analytics/advertising trackers in the app.</li>
     <li><strong>No card details</strong>: we do not collect or store your payment card details (payments are handled by Apple/Google).</li>
-    <li><strong>No device GPS navigation from current location</strong>: we do not require or use your device’s current GPS location to provide route planning.</li>
+    <li><strong>No continuous GPS tracking</strong>: we do not continuously track your device location in the background.</li>
   </ul>
+
+  <h2>Important note about client data you enter</h2>
+  <p>
+    Farrier Fleet lets you store information about your own clients. You are responsible for ensuring you have a lawful
+    basis to store and use that information (for example, for providing your services and managing appointments).
+  </p>
 
   <h2>How we use your data</h2>
   <ul>
-    <li>To provide core features (client management, planning, scheduling, route/distance calculations).</li>
-    <li>To store and sync your data across devices.</li>
-    <li>To maintain security, prevent abuse, and troubleshoot issues.</li>
-    <li>To respond to support requests.</li>
-    <li>To confirm subscription access (if you subscribe).</li>
+    <li><strong>Provide core features</strong> (client/horse management, scheduling, notes, photos, route/distance calculations).</li>
+    <li><strong>Store and sync your data</strong> across devices and to prevent data loss.</li>
+    <li><strong>Maintain security and reliability</strong> (prevent abuse, detect issues, troubleshoot errors).</li>
+    <li><strong>Respond to support requests</strong> and communicate with you about the app.</li>
+    <li><strong>Confirm subscription access</strong> (e.g. whether Pro features should be enabled).</li>
   </ul>
 
   <h2>Legal basis (UK GDPR)</h2>
-  <p>We process personal data under one or more of these bases, depending on context:</p>
+  <p>We rely on the following legal bases, depending on the activity:</p>
   <ul>
-    <li><strong>Contract</strong>: to provide the service you request when using the app.</li>
-    <li><strong>Legitimate interests</strong>: to keep the service secure and reliable.</li>
-    <li><strong>Consent</strong>: where required (for example, if you enable optional device permissions).</li>
+    <li>
+      <strong>Contract</strong>: to provide the service you request when using the app, including storing, displaying,
+      and syncing the data you enter and delivering paid features if you subscribe.
+    </li>
+    <li>
+      <strong>Legitimate interests</strong>: to keep the service secure and reliable, prevent abuse, maintain service quality,
+      and fix bugs. We only use this basis where our interests are not overridden by your rights and freedoms.
+    </li>
+    <li>
+      <strong>Consent</strong>: where required, such as when you choose to enable device permissions (e.g. camera/photo library).
+      You can withdraw consent at any time by disabling the relevant permission in your device settings.
+    </li>
   </ul>
 
   <h2>Service providers (processors) and sharing</h2>
@@ -79,7 +99,7 @@
   <h3>Supabase (authentication, database, file storage)</h3>
   <p>
     We use <strong>Supabase</strong> to provide user authentication (Supabase Auth), store your app data (database),
-    and store uploaded images (Supabase Storage). This means your account data, client records, locations, and photos
+    and store uploaded images (Supabase Storage). This means your account data, client records, derived locations, and photos
     may be stored and processed by Supabase on our behalf.
   </p>
 
@@ -90,41 +110,58 @@
   </p>
   <p>
     When you use these features, relevant location information (such as client addresses, postcodes, or coordinates)
-    may be sent to Google to provide the requested functionality. Google acts as an independent provider of these API services.
+    may be sent to Google to provide the requested functionality. Google processes this information under its own terms and policies.
   </p>
 
-  <h3>Payments and subscriptions (Apple / Google)</h3>
+  <h3>Payments and subscriptions (Apple / Google / RevenueCat)</h3>
   <p>
     If you purchase a subscription, payment is processed by the <strong>Apple App Store</strong> (iOS) and/or
-    <strong>Google Play</strong> (Android). We do not receive your full payment details. We may receive information
-    necessary to confirm subscription access (such as whether a subscription is active).
+    <strong>Google Play</strong> (Android). We do not receive your full payment details.
+  </p>
+  <p>
+    We use <strong>RevenueCat</strong> to help manage subscriptions and verify subscription/entitlement status across devices.
+    RevenueCat may process purchase and subscription status information (such as whether a subscription is active) for this purpose.
   </p>
 
   <h2>International transfers</h2>
   <p>
-    Our service providers may process data on servers located outside your country. Where international transfers occur,
-    we rely on appropriate safeguards as required by applicable data protection law.
+    Our service providers may process data on servers located outside the UK. Where international transfers occur,
+    we rely on appropriate safeguards such as standard contractual clauses and/or other legally recognised transfer mechanisms
+    required by applicable data protection law.
   </p>
 
   <h2>Retention</h2>
   <ul>
-    <li>We keep your data for as long as your account is active or as needed to provide the service.</li>
-    <li>If you delete your account, we will delete or anonymise your personal data within a reasonable period,
-        except where we must keep certain data for legal, security, or operational reasons.</li>
+    <li><strong>Active account</strong>: we keep your data for as long as your account is active so the app can function.</li>
+    <li>
+      <strong>Account deletion</strong>: if you delete your account, we delete your personal data from our active systems.
+      If your device is online, deletion is requested immediately. Residual copies may remain in backups for a limited period
+      (typically up to 30 days) before being overwritten.
+    </li>
+    <li>
+      <strong>Legal/security exceptions</strong>: we may retain limited information where necessary for legal, security,
+      or operational reasons (for example, to investigate abuse).
+    </li>
   </ul>
 
   <h2>Your rights</h2>
-  <p>Depending on your location and applicable law, you may have rights to:</p>
+  <p>Depending on your location and applicable law (including the UK GDPR), you may have rights to:</p>
   <ul>
     <li>Access the personal data we hold about you</li>
     <li>Correct inaccurate data</li>
     <li>Request deletion of your data</li>
     <li>Object to or restrict certain processing</li>
     <li>Request a copy of your data (data portability), where applicable</li>
+    <li>Withdraw consent (where consent is the legal basis)</li>
   </ul>
   <p>
     To exercise these rights, contact us at <a href="mailto:simongabrielfleet@gmail.com">simongabrielfleet@gmail.com</a>.
     If you are in the UK, you can also complain to the Information Commissioner’s Office (ICO).
+  </p>
+
+  <h2>No profiling / automated decision-making</h2>
+  <p>
+    We do not use your personal data for profiling or automated decision-making that produces legal or similarly significant effects.
   </p>
 
   <h2>Security</h2>
@@ -135,7 +172,7 @@
 
   <h2>Children</h2>
   <p>
-    farrier app is not intended for children. We do not knowingly collect personal data from children.
+    Farrier Fleet is not intended for children. We do not knowingly collect personal data from children.
   </p>
 
   <h2>Changes to this policy</h2>
@@ -146,7 +183,8 @@
 
   <hr />
   <p class="muted">
-    <strong>farrier app</strong> • Privacy Policy • Contact: <a href="mailto:simongabrielfleet@gmail.com">simongabrielfleet@gmail.com</a>
+    <strong>Farrier Fleet</strong> • Privacy Policy • Contact:
+    <a href="mailto:simongabrielfleet@gmail.com">simongabrielfleet@gmail.com</a>
   </p>
 </main>
 </body>
